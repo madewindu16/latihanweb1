@@ -1,0 +1,176 @@
+/* =========================
+   CSS UTAMA - DESKTOP
+========================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e8f5e9;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.judul {
+  color: #006400;
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  color: green;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #1e90ff;
+}
+
+
+/* =========================
+   PROFILE / HERO
+========================= */
+
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-hero img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+main section {
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #006400;
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+}
+
+footer .container {
+  margin-top: 30px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   TABLET & MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .profile-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-hero img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}
